@@ -19,13 +19,17 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CleanArchitectureBasedSample"
+rootProject.name = "ComposeFeatureBasedSample"
 include(":app")
+include(":app-navigation")
 
 include(":core:api")
 include(":core:uikit")
-include(":feature-products")
-include(":feature-products:data")
-include(":feature-products:domain")
-include(":feature-products:ui")
-include(":app-navigation")
+include(":core-data")
+include(":core-domain")
+
+include(":core-data:products")
+include(":core-data:cart")
+include(":core-domain:cart")
+include(":core-domain:products")
+include(":feature:products")
